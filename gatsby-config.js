@@ -15,23 +15,18 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'Spotify Music Analyzer',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Developed a Java-based app that visualizes users' Spotify listening habits by genre, mood, and pattern. Used the Spotify API and SQLite to build a full data pipeline with interactive charts via JavaFX and JFreeChart.',
+      
       },
       {
-        name: 'ExtensionKit',
+        name: 'Covid-19: The Highs and Lows',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://extensionkit.io/?ref=devfolio',
+          'Built an interactive Power BI dashboard using over 500,000 global COVID-19 records to analyze vaccination trends, infection rates, and hospital capacity. Automated data cleaning and anomaly detection in Python to improve processing efficiency by 30%.',
+        
       },
-      {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
+     
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
@@ -53,18 +48,18 @@ module.exports = {
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages & Frameworks',
+        name: 'Software',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'SQL, Java, Python, Excel, Amazon Web Services (AWS), Tableau, Microsoft Power BI, JavaScript, HTML, CSS',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Libraries',
+        description: 'Pandas, React, TensorFlow, Swing, RESTful API, JavaFX, Chart.js, Spotify API, Node.js, JChartT, Angular',
       },
       {
-        name: 'Other',
+        name: 'Hard Skills',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Relational Databases, Data Manipulation, Data Visualization, Requirements Gathering, Programming',
       },
     ],
   },
