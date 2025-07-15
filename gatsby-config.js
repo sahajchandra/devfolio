@@ -18,13 +18,13 @@ module.exports = {
         name: 'Spotify Music Analyzer',
         description:
           'Developed a Java-based app that visualizes users Spotify listening habits by genre, mood, and pattern. Used the Spotify API and SQLite to build a full data pipeline with interactive charts via JavaFX and JFreeChart.',
-      
+           link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
         name: 'Covid-19: The Highs and Lows',
         description:
           'Built an interactive Power BI dashboard using over 500,000 global COVID-19 records to analyze vaccination trends, infection rates, and hospital capacity. Automated data cleaning and anomaly detection in Python to improve processing efficiency by 30%.',
-        
+           link: 'https://github.com/RyanFitzgerald/devfolio',
       },
      
     ],
@@ -33,16 +33,17 @@ module.exports = {
       {
         name: 'Data Analyst Intern',
         description: 'New Jersey Resources, June 2024 - August 2024',
-
+         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
         name: 'Data Engineer Intern',
         description: 'Orion Innovations, June 2023 - August 2023',
-       
+          link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
         name: 'Software Developer Intern',
         description: 'Inrikka Inc., May 2022 - August 2022',
+         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
