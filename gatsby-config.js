@@ -3,19 +3,15 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Sahaj Chandra',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Sahaj Chandra | Data Engineer/Analyst | Forever Student`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
-    author: `@rfitzio`,
-    // Optional: Github account URL
-    github: `https://github.com/RyanFitzgerald`,
+    description: `Aspiring Data Engineer`,
     // Optional: LinkedIn account URL
-    linkedin: `https://github.com/RyanFitzgerald/devfolio`,
+    linkedin: `https://www.linkedin.com/in/sahajchandra/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `I'm a data analyst with hands-on experience turning raw data into actionable insights through projects and internships in analytics, software development, and dashboard design. From building KPI-driven Power BI dashboards for executives to optimizing SQL pipelines for 40,000+ records, I enjoy solving complex problems that drive real results. My background spans Python, SQL, and Java, along with visualization tools like Power BI and Tableau. I’m equally comfortable cleaning messy datasets as I am presenting clear visual stories. I'm now looking for full-time roles where I can keep learning, collaborate cross-functionally, and make data meaningful at scale.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -40,19 +36,18 @@ module.exports = {
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Data Analyst Intern',
+        description: 'New Jersey Resources, June 2024 - August 2024',
+
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Data Engineer Intern',
+        description: 'Orion Innovations, June 2023 - August 2023',
+       
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Software Developer Intern',
+        description: 'Inrikka Inc., May 2022 - August 2022',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
