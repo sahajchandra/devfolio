@@ -33,6 +33,7 @@ module.exports = {
       {
         name: 'Data Analyst Intern',
         description: 'New Jersey Resources, June 2024 - August 2024',
+        description: 'Did xyz at abc for hij',
          link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
