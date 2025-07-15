@@ -17,7 +17,7 @@ module.exports = {
       {
         name: 'Spotify Music Analyzer',
         description:
-          'Developed a Java-based app that visualizes users' Spotify listening habits by genre, mood, and pattern. Used the Spotify API and SQLite to build a full data pipeline with interactive charts via JavaFX and JFreeChart.',
+          'Developed a Java-based app that visualizes users Spotify listening habits by genre, mood, and pattern. Used the Spotify API and SQLite to build a full data pipeline with interactive charts via JavaFX and JFreeChart.',
       
       },
       {
