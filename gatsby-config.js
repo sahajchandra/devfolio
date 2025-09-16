@@ -18,10 +18,7 @@ module.exports = {
       {
         name: 'Data Analyst Intern',
         description: 'New Jersey Resources, June 2024 - August 2024',
-        description: 'Partnered with 2 interns to perform data cleaning, normalization, and transformation for over 40,000 resident
-records across 14 NJ counties using SQL and Python (Pandas), increasing data integrity and enabling segmentation. Developed a Power BI dashboard integrating 30+ real-time KPIs to support KPI tracking, trend analysis, and
-strategic decision-making by the COO and business unit heads. Utilized data from customer intake forms to identify market segments, buyer personas, and high-opportunity zip
-codes, empowering campaign targeting and lead scoring efforts across departments.',
+        description: 'Partnered with 2 interns to perform data cleaning, normalization, and transformation for over 40,000 resident records across 14 NJ counties using SQL and Python (Pandas), increasing data integrity and enabling segmentation. Developed a Power BI dashboard integrating 30+ real-time KPIs to support KPI tracking, trend analysis, and strategic decision-making by the COO and business unit heads. Utilized data from customer intake forms to identify market segments, buyer personas, and high-opportunity zip codes, empowering campaign targeting and lead scoring efforts across departments.',
       },
       {
         name: 'Data Engineer Intern',
