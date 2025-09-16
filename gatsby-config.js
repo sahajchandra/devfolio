@@ -13,22 +13,7 @@ module.exports = {
     // Content of the About Me section
     about: `I'm a data analyst with hands-on experience turning raw data into actionable insights through projects and internships in analytics, software development, and dashboard design. From building KPI-driven Power BI dashboards for executives, to optimizing SQL pipelines for 40,000+ records, I enjoy solving complex problems that drive real results. My background spans Python, SQL, and Java, along with visualization tools like Power BI and Tableau. I’m equally comfortable cleaning messy datasets as I am presenting clear visual stories. I'm now looking for full-time roles where I can keep learning, collaborate cross-functionally, and make data meaningful at scale.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
-    projects: [
-      {
-        name: 'Spotify Music Analyzer',
-        description:
-          'Developed a Java-based app that visualizes users Spotify listening habits by genre, mood, and pattern. Used the Spotify API and SQLite to build a full data pipeline with interactive charts via JavaFX and JFreeChart.',
-           link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Covid-19: The Highs and Lows',
-        description:
-          'Built an interactive Power BI dashboard using over 500,000 global COVID-19 records to analyze vaccination trends, infection rates, and hospital capacity. Automated data cleaning and anomaly detection in Python to improve processing efficiency by 30%.',
-           link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-     
-    ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
         name: 'Data Analyst Intern',
@@ -47,6 +32,22 @@ module.exports = {
          link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
+    projects: [
+      {
+        name: 'Spotify Music Analyzer',
+        description:
+          'Developed a Java-based app that visualizes users Spotify listening habits by genre, mood, and pattern. Used the Spotify API and SQLite to build a full data pipeline with interactive charts via JavaFX and JFreeChart.',
+           link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
+      {
+        name: 'Covid-19: The Highs and Lows',
+        description:
+          'Built an interactive Power BI dashboard using over 500,000 global COVID-19 records to analyze vaccination trends, infection rates, and hospital capacity. Automated data cleaning and anomaly detection in Python to improve processing efficiency by 30%.',
+           link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
+     
+    ],
+  
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
