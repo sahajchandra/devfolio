@@ -7,11 +7,11 @@ module.exports = {
     // Main Site Title
     title: `Sahaj Chandra | Data Engineer/Analyst | Forever Student`,
     // Description that goes under your name in main bio
-    description: `Aspiring Data Engineer`,
+    description: `Aspiring Data Engineer/Analyst | Forever Student`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/sahajchandra/`,
     // Content of the About Me section
-    about: `I'm a data analyst with hands-on experience turning raw data into actionable insights through projects and internships in analytics, software development, and dashboard design. From building KPI-driven Power BI dashboards for executives to optimizing SQL pipelines for 40,000+ records, I enjoy solving complex problems that drive real results. My background spans Python, SQL, and Java, along with visualization tools like Power BI and Tableau. I’m equally comfortable cleaning messy datasets as I am presenting clear visual stories. I'm now looking for full-time roles where I can keep learning, collaborate cross-functionally, and make data meaningful at scale.`,
+    about: `I'm a data analyst with hands-on experience turning raw data into actionable insights through projects and internships in analytics, software development, and dashboard design. From building KPI-driven Power BI dashboards for executives, to optimizing SQL pipelines for 40,000+ records, I enjoy solving complex problems that drive real results. My background spans Python, SQL, and Java, along with visualization tools like Power BI and Tableau. I’m equally comfortable cleaning messy datasets as I am presenting clear visual stories. I'm now looking for full-time roles where I can keep learning, collaborate cross-functionally, and make data meaningful at scale.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
