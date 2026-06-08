@@ -8,6 +8,7 @@ import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
 import SectionCertifications from '../components/section-certifications';
+import SectionContact from '../components/section-contact';
 
 const Index = () => (
   <Layout>
@@ -18,6 +19,7 @@ const Index = () => (
     <SectionProjects />
     <SectionSkills />
     <SectionCertifications />
+    <SectionContact />
   </Layout>
 );
 

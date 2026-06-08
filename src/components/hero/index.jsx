@@ -81,6 +81,10 @@ const Hero = () => {
           </span>
         </div>
 
+        <p className="mx-auto mt-7 max-w-xl text-base font-light leading-relaxed text-gray-400 light:text-gray-600">
+          {profile.whatIDo}
+        </p>
+
         <div className="mt-9 flex items-center justify-center gap-4">
           <IconLink href={socials.github} label="GitHub">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">

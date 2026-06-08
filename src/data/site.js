@@ -13,11 +13,13 @@ export const profile = {
     'Forever Student',
   ],
   tagline: 'Automation Engineer · Forever Student',
+  whatIDo:
+    'I build the automations and integrations that connect a company’s tools and take the manual work out of the day-to-day.',
   location: 'New Jersey / New York',
   about: [
-    `I'm an Automation Engineer. I design, build, and ship workflow automations and API integrations for small and mid-size businesses, mostly with Zapier, Make (Integromat), n8n, REST APIs, webhooks, and the authentication and data-mapping work that ties them together.`,
-    `Before automation, I worked in data: cleaning, normalizing, and modeling large datasets and building dashboards. That background still shapes how I plan a build. I run client discovery myself, design for the cases that tend to break (retries, idempotency, partial failures), and document the work so a non-technical team can keep it running and change it after I hand it off.`,
-    `Outside of client work, I'm usually trying out a new tool or rebuilding something I've already done in a cleaner way.`,
+    `I'm an Automation Engineer at Flow Digital. I design, build, and ship workflow automations and API integrations, mostly with Zapier, Make (Integromat), n8n, REST APIs, webhooks, and the authentication and data-mapping work that ties them together.`,
+    `My background is in data. Before automation I spent my time cleaning, normalizing, and modeling large datasets and building dashboards, and that still shapes how I plan a build. I run discovery myself, design for the cases that tend to break (retries, idempotency, partial failures), and document everything so a non-technical team can keep it running long after I've moved on to the next thing.`,
+    `Away from the keyboard, you'll usually find me watching the Knicks (go Knicks!), out on a hike, or cooking something new. I've trained karate for years and earned my black belt, and that same discipline carries straight into how I build.`,
   ],
 };
 
@@ -39,10 +41,10 @@ export const experience = [
     bullets: [
       'Cut lead response time and CRM data entry across a 5-system sales stack by building a distributed, event-driven lead intelligence pipeline in Zapier and Pipedrive, with cross-workspace webhook relay, LLM-powered transcript parsing, and conditional CRM routing. I deliberately avoided custom backend infrastructure to keep operational complexity low.',
       'Hardened automation reliability and removed silent failures across production workflows by designing retries, error branches, and Slack/email alerting in Zapier and Make, with monitoring so non-technical operators could triage issues without engineering involvement.',
-      'Removed manual data entry for 100 to 150 employees across 50 concurrent job sites at a NYC steel fabrication client by designing a 15+ table relational data model in Airtable and shipping a role-based web app with 8 permission levels in Softr (JavaScript, HTML, CSS) backed by a live REST API integration layer.',
+      'Removed manual data entry for 100 to 150 employees across 50 concurrent job sites at a NYC steel fabrication company by designing a 15+ table relational data model in Airtable and shipping a role-based web app with 8 permission levels in Softr (JavaScript, HTML, CSS) backed by a live REST API integration layer.',
       'Built a location-agnostic inventory management system for a multi-location coffee shop chain that can onboard 5+ new locations a year with zero schema rework, using a data-driven relational architecture in Airtable and Softr with a custom JavaScript frontend and no hardcoded location logic.',
-      "Led the firm's largest active engagement, owning client communication, scoping, and project planning while directing a developer through implementation as the single point of contact across all technical and delivery decisions.",
-      'Standardized delivery across client builds by documenting reusable patterns for relational schemas, REST and Metadata API conventions, webhook handling, and permission modeling, so non-technical clients can operate and extend their automations after delivery.',
+      "Led the largest active project at the firm, owning communication, scoping, and planning while directing a developer through implementation as the main point of contact on all technical and delivery decisions.",
+      'Standardized delivery across projects by documenting reusable patterns for relational schemas, REST and Metadata API conventions, webhook handling, and permission modeling, so non-technical teams can operate and extend the automations after handoff.',
     ],
     tags: ['Zapier', 'Make', 'n8n', 'Pipedrive', 'Airtable', 'Softr', 'REST APIs', 'Webhooks'],
   },
@@ -146,4 +148,5 @@ export const nav = [
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Certifications', href: '#certifications' },
+  { label: 'Contact', href: '#contact' },
 ];

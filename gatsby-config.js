@@ -30,6 +30,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
