@@ -11,7 +11,7 @@ const ArrowIcon = () => (
 );
 
 const SectionProjects = () => (
-  <Section id="projects" eyebrow="03 — Things I've Built" title="Projects">
+  <Section id="projects" eyebrow="03 · Things I've Built" title="Projects">
     <div className="grid gap-6 sm:grid-cols-2">
       {projects.map((project, i) => {
         const hasLink = project.link && project.link.length > 0;

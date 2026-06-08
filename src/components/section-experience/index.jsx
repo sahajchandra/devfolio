@@ -5,7 +5,7 @@ import Reveal from '../reveal';
 import { experience } from '../../data/site';
 
 const SectionExperience = () => (
-  <Section id="experience" eyebrow="02 — Where I've Worked" title="Experience">
+  <Section id="experience" eyebrow="02 · Where I've Worked" title="Experience">
     <div className="relative space-y-6 border-l border-charcoal-700 pl-6 light:border-gray-200 sm:pl-8">
       {experience.map((job, i) => (
         <Reveal key={`${job.company}-${job.dates}`} delay={i * 80}>

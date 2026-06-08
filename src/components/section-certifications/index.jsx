@@ -25,7 +25,7 @@ const StatusBadge = ({ status }) => {
 };
 
 const SectionCertifications = () => (
-  <Section id="certifications" eyebrow="05 — Always Learning" title="Certifications">
+  <Section id="certifications" eyebrow="05 · Always Learning" title="Certifications">
     <div className="grid gap-6 sm:grid-cols-2">
       {certifications.map((cert, i) => (
         <Reveal

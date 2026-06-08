@@ -5,7 +5,7 @@ import Reveal from '../reveal';
 import { skills } from '../../data/site';
 
 const SectionSkills = () => (
-  <Section id="skills" eyebrow="04 — My Toolkit" title="Skills">
+  <Section id="skills" eyebrow="04 · My Toolkit" title="Skills">
     <div className="grid gap-6 sm:grid-cols-2">
       {skills.map((group, i) => (
         <Reveal
