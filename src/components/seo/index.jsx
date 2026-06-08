@@ -11,7 +11,6 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            author
           }
         }
       }
@@ -24,43 +23,17 @@ const SEO = ({ description, lang, meta, title }) => {
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang }}
       title={finalTitle}
       meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: finalTitle,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          property: `twitter:creator`,
-          content: site.siteMetadata?.author || ``,
-        },
-        {
-          property: `twitter:title`,
-          content: finalTitle,
-        },
-        {
-          property: `twitter:description`,
-          content: metaDescription,
-        },
+        { name: `description`, content: metaDescription },
+        { name: `theme-color`, content: `#0d0d12` },
+        { property: `og:title`, content: finalTitle },
+        { property: `og:description`, content: metaDescription },
+        { property: `og:type`, content: `website` },
+        { name: `twitter:card`, content: `summary` },
+        { name: `twitter:title`, content: finalTitle },
+        { name: `twitter:description`, content: metaDescription },
       ].concat(meta)}
     />
   );

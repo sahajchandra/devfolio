@@ -1,251 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  .blog-content {
-    @apply text-gray-600;
-    @apply max-w-screen-md;
+  /* Dark is the default; html.light flips to the light palette */
+  html {
+    background-color: #0d0d12;
+    scroll-behavior: smooth;
+  }
+  html.light {
+    background-color: #f6f6fa;
+  }
+  body {
+    @apply font-sans;
+  }
+  ::selection {
+    background: rgba(124, 58, 237, 0.35);
   }
 
-  .blog-content a {
-    @apply text-black;
-    @apply underline;
+  /* Themed scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0d0d12;
+  }
+  html.light ::-webkit-scrollbar-track {
+    background: #ececf3;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a38;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+  }
+}
+
+@layer components {
+  /* Animated purple gradient text */
+  .text-gradient {
+    background-image: linear-gradient(120deg, #a78bfa, #7c3aed, #c084fc, #a78bfa);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
-  .blog-content p,
-  .gatsby-highlight {
-    @apply mb-6;
+  /* Pill / tag badge */
+  .pill {
+    @apply inline-block rounded-full border px-3 py-1 text-xs font-mono tracking-tight;
+    @apply border-charcoal-600 bg-charcoal-800/70 text-gray-300;
+    @apply light:border-gray-200 light:bg-white light:text-gray-600;
   }
 
-  .blog-content ul,
-  .blog-content ol {
-    @apply mb-6;
-    @apply ml-10;
-  }
-
-  .blog-content ul li {
-    @apply list-disc;
-  }
-
-  .blog-content ol li {
-    @apply list-decimal;
-  }
-
-  .blog-content h1 {
-    @apply text-4xl;
-    @apply text-gray-900;
-    @apply font-bold;
-    @apply my-3;
-  }
-
-  .blog-content h2 {
-    @apply text-2xl;
-    @apply text-gray-900;
-    @apply font-bold;
-    @apply my-3;
-  }
-
-  .blog-content h3 {
-    @apply text-xl;
-    @apply text-gray-900;
-    @apply font-bold;
-    @apply my-3;
-  }
-
-  .blog-content h4 {
-    @apply text-gray-900;
-    @apply font-bold;
-    @apply my-3;
-  }
-
-  .blog-content h5 {
-    @apply text-gray-900;
-    @apply text-sm;
-    @apply font-bold;
-    @apply my-3;
-  }
-
-  .blog-content h6 {
-    @apply text-gray-700;
-    @apply text-xs;
-    @apply font-bold;
-    @apply my-3;
-  }
-
-  .blog-content blockquote {
-    @apply pl-5;
-    @apply border-l-4;
-  }
-
-  .blog-content hr {
-    @apply my-6;
+  /* Section eyebrow label */
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.25em] text-brand-light light:text-brand-dark;
   }
 }
 
 @layer utilities {
-  @responsive {
-    .max-w-150 {
-      max-width: 150px;
-    }
+  /* Scroll-reveal: starts hidden, animates in when .is-visible is added */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 
-    .top-5 {
-      top: 5%;
-    }
+  .max-w-150 {
+    max-width: 150px;
   }
 }
 
-/**
- * atom-dark theme for `prism.js`
- * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
- * @author Joe Gibson (@gibsjose)
- */
-
-code[class*='language-'],
-pre[class*='language-'] {
-  color: #c5c8c6;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
-  font-size: 0.75rem;
-  direction: ltr;
-  margin-bottom: 1.5rem;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+/* ---------------------------------------------------------------------------
+   Background: midnight glow blobs + rising purple "rainfire" embers
+   --------------------------------------------------------------------------- */
+.bg-field {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* Code blocks */
-pre[class*='language-'] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto !important;
-  border-radius: 0.3em;
+.bg-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.5;
+}
+.bg-blob--one {
+  top: -10%;
+  left: -5%;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.55), transparent 70%);
+}
+.bg-blob--two {
+  bottom: -15%;
+  right: -10%;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, rgba(109, 40, 217, 0.45), transparent 70%);
+}
+html.light .bg-blob {
+  opacity: 0.22;
 }
 
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-  background: #1d1f21;
+.ember {
+  position: absolute;
+  bottom: -24px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.95), rgba(124, 58, 237, 0) 70%);
+  animation-name: rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+html.light .ember {
+  opacity: 0.35;
 }
 
-/* Inline code */
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
-  border-radius: 0.3em;
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.05);
+    opacity: 0;
+  }
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #7c7c7c;
-}
-
-.token.punctuation {
-  color: #c5c8c6;
-}
-
-.namespace {
-  opacity: 0.7;
-}
-
-.token.property,
-.token.keyword,
-.token.tag {
-  color: #96cbfe;
-}
-
-.token.class-name {
-  color: #ffffb6;
-  text-decoration: underline;
-}
-
-.token.boolean,
-.token.constant {
-  color: #99cc99;
-}
-
-.token.symbol,
-.token.deleted {
-  color: #f92672;
-}
-
-.token.number {
-  color: #ff73fd;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #a8ff60;
-}
-
-.token.variable {
-  color: #c6c5fe;
-}
-
-.token.operator {
-  color: #ededed;
-}
-
-.token.entity {
-  color: #ffffb6;
-  cursor: help;
-}
-
-.token.url {
-  color: #96cbfe;
-}
-
-.language-css .token.string,
-.style .token.string {
-  color: #87c38a;
-}
-
-.token.atrule,
-.token.attr-value {
-  color: #f9ee98;
-}
-
-.token.function {
-  color: #dad085;
-}
-
-.token.regex {
-  color: #e9c062;
-}
-
-.token.important {
-  color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.language-text {
-  background: rgb(237, 242, 247) !important;
-  border-radius: 0 !important;
-  color: rgb(74, 85, 104) !important;
-  font-size: 12px !important;
-  padding: 2px 5px !important;
-  text-shadow: none !important;
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .ember {
+    display: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
