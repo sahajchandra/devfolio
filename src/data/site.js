@@ -19,7 +19,7 @@ export const profile = {
   about: [
     `I'm an Automation Engineer at Flow Digital. I design, build, and ship workflow automations and API integrations, mostly with Zapier, Make (Integromat), n8n, REST APIs, webhooks, and the authentication and data-mapping work that ties them together.`,
     `My background is in data. Before automation I spent my time cleaning, normalizing, and modeling large datasets and building dashboards, and that still shapes how I plan a build. I run discovery myself, design for the cases that tend to break (retries, idempotency, partial failures), and document everything so a non-technical team can keep it running long after I've moved on to the next thing.`,
-    `Away from the keyboard, you'll usually find me watching the Knicks (go Knicks!), out on a hike, or cooking something new. I've trained karate for years and earned my black belt, and that same discipline carries straight into how I build.`,
+    `Away from the keyboard, you'll usually find me playing or watching basketball (Go Knicks!), out on a hike, playing with my Golden Retriever, or cooking something new. I've trained karate for years and earned my black belt, and that same discipline carries straight into everything I do.`,
   ],
 };
 
